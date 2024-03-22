@@ -18,9 +18,8 @@ repositories {
 	// for more information about repositories.
 
 
-	maven { url = "https://maven.resourcefulbees.com/repository/maven-public/" }
 	maven {
-		url = "https://api.modrinth.com/maven"
+		url "https://maven.teamresourceful.com/repository/maven-public/"
 	}
 }
 
@@ -50,6 +49,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
+	"modImplementation" group: "earth.terrarium.adastra", name: "adastra-$modloader-$minecraft_version", version: ad_astra_version
 }
 
 processResources {
